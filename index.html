@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/Fk-logo.png" alt="Logo">
+        </div>  
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project" >My projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="profile">
+     <div class="pic-container">
+        <img src="./assets/profilePic.png" alt="profile pic" class="profile-pic">
+        <div class="content-text">
+            <p>Hello I'm</p>
+            <h1>Fahri Kuzey</h1>
+            <p>Software Developer</p>
+
+         <div class="profile-btn">
+            <button class="cv-btn" onclick="window.open('./assets/fk-cv.pdf', '_blank')">View CV</button>
+            <a href="#contact"  class="contact-btn">Contact Me</a> 
+         </div>
+
+        </div>
+     </div>
+    </section>
+
+    <section id="about">
+        <!-- Huvudrubrik -->
+        <div class="about-header">
+            <p>Get to know more</p>
+            <h3>About me</h3>
+        </div>
+    
+        <!-- Flexbox-container för layout -->
+        <div class="about-container">
+            <!-- Bild -->
+            <img src="./assets/portfolio-sidoprofil.jpg" alt="about pic" class="about-pic">
+    
+            <!-- Textkolumner -->
+     <div class="details-container">
+        <div class="education-column">
+            <i class="fas fa-graduation-cap education-icon"></i>
+            <h3>Education</h3>
+            <ul>
+                <li>Higher Vocational Diploma in Agile Java Development (2025 April)</li>
+                <li>Secondary School Diploma in Social and Behavioral Sciences</li>
+            </ul>
+         </div>
+         <div class="experience-column">
+            <i class="fas fa-briefcase experience-icon"></i>
+            <h3>Experience</h3>
+            <ul>
+                <li>1+ years Software Development</li>
+                <li>Software Developer Intern at PlotEye</li>
+            </ul>
+        </div>
+      </div>
+
+     <!-- About-text ska ligga utanför details-container -->
+     <div class="about-text">
+        <p>
+            Hello, my name is Fahri Kuzey, and I am 24 years old. 
+            Currently, I work as a warehouse operative alongside my studies. 
+            In April 2025, I will graduate with a degree in software development. 
+            Throughout my educational journey, 
+            I have explored various fields, but I have finally found my true passion in software development.
+            Initially, I pursued a career in teaching and dental technician, 
+            but it was through my exploration of different studies that I discovered my enthusiasm for programming. 
+            When I first encountered coding, 
+            I immediately thought, "This is how it works." 
+            Though I am at the beginning of my career, 
+            I am eager to learn and grow as much as possible. 
+            My personal goal is to continuously acquire new knowledge and to master the skills I have already developed.
+            I am committed to achieving excellence in my field and look forward to contributing innovative solutions in the world of software development.
+        </p>
+     </div>
+    </div>
+    </section>
+
+    <section id="experience">
+        <div class="experience-header">
+            <p>What i excel at</p>
+            <h3>Experience</h3>
+        </div>
+
+        <div class="experience-container">
+            <div class="experience-category">
+                <i class="fas fa-code custom-icon"></i>
+                <h3>Frontend Development</h3>
+
+                <ul>
+                    <li><i class="fab fa-html5 "></i>HTML</li>
+                    <li><i class="fab fa-js"></i>Javascript</li>
+                    <li><i class="fab fa-react"></i>React</li>
+                    <li><i class="fab fa-css3-alt"></i>CSS</li>
+                    <li><i class="fab fa-github"></i>Github</li>
+                    <li><i class="fas fa-users"></i>Agile Methodology</li>
+                </ul>
+
+            </div>
+
+            <div class="experience-category">
+                <i class="fas fa-server custom-icon" ></i>
+                <h3>Backend Development</h3>
+
+                <ul>
+                    <li><i class="fab fa-java"></i>Java</li>
+                    <li><i class="fas fa-database"></i>SQL</li>
+                    <li><i class="devicon-express-original"></i>Express.js</li>
+                    <li><i class="devicon-nodejs-plain colored"></i>Node.js</li>
+                    <li><i class="fas fa-cloud"></i>Spring Boot</li>
+                    <li><i class="fas fa-plug"></i>API</li>
+                    <li><i class="fas fa-network-wired"></i>Microservices</li>
+                    <li><i class="fas fa-vial"></i>Testing</li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="project">
+        <div class="project-header">
+            <p>Here are some of </p>
+            <h3>My projects</h3>
+        </div>
+
+        <div class="project-container">
+            <div class="project-card">
+                <img src="./assets/project-1.png" alt="project 1" class="project-pic">
+                <h3>Project title</h3>
+                <p>Description</p>
+                <a href="www.github.com" target="_blank" class="github-btn">
+                   <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/project-2.png" alt="project 2" class="project-pic">
+                <h3>Project title</h3>
+                <p>Description</p>
+                <a href="www.github.com" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/project-2.png" alt="project 2" class="project-pic">
+                <h3>Project title</h3>
+                <p>Description</p>
+                <a href="www.github.com" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-header">
+            <p>Feel free to</p>
+            <h3>Contact Me</h3>
+        </div>
+
+         <!-- Kontaktinfo i en ruta -->
+    <div class="contact-box">
+        <!-- Mail -->
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:Fahrikuzey@hotmail.com">E-Mail</a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="linkedin.com/in/fahri-kuzey-3540a7177" target="_blank">LinkedIn</a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/fukriiboii" target="_blank">Github</a>
+        </div>
+
+        <!-- Telefon -->
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:46733976425">Phone</a>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024. All rights reserved</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

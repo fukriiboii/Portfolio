@@ -1,0 +1,235 @@
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px){
+
+    /*PROFILE SECTION*/
+  
+    .pic-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .profile-pic{
+        width: 60%;
+        max-width: 300px;
+        height: auto;
+        margin-top: -50px;
+    }
+
+    .content-text{
+        align-items: center;
+        text-align: center;
+    }
+    .content-text h1{
+        font-size: 30px;
+    }
+    .content-text p{
+        font-size: 20px;
+    }
+    .profile-btn{
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .cv-btn, .contact-btn{
+        width: 50%;
+        max-width: 250px;
+    }
+
+     /*ABOUT SECTION*/
+
+     .about-header p{
+        font-size: 15px;
+     }
+
+     .about-header h3{
+        font-size: 30px;
+     }
+
+     .about-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-pic{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .details-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .education-column, .experience-column{
+        max-width: 100%;
+        text-align: center;
+        padding: 50px;
+    }
+
+    /*EXPERIENCE SECTION*/
+
+    .experience-header p{
+        font-size: 15px;
+     }
+
+     .experience-header h3{
+        font-size: 30px;
+     }
+
+    .experience-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-category{
+        width: 90%;
+        padding: 30px;
+        text-align: center;
+    }
+    .custom-icon{
+        font-size: 1.3rem;
+    }
+
+    .experience-category h3{
+        font-size: 1.2rem;
+    }
+
+    .experience-category ul li {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    /*PROJECT SECTION*/
+    .project-header p{
+        font-size: 15px;
+     }
+
+     .project-header h3{
+        font-size: 30px;
+     }
+
+    .project-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .project-pic{
+        width: 100%;
+        height: auto;
+    }
+
+    /*SEKTION CONTACT*/
+
+    #contact{
+        padding: 20px;
+    }
+
+    .contact-header h3{
+        font-size: 30px;
+    }
+
+    .contact-header p{
+        font-size: 15px;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item{
+        display: flex;
+        align-items: left;
+        margin-bottom: 10px;
+        width: 100%;
+        justify-content: left;
+    }
+
+    .contact-item i{
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+    .contact-item a,
+    .contact-item span {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    /*FOOTER SECTION*/
+
+    footer p{
+        font-size: 15px;
+    }
+
+
+
+
+
+
+}

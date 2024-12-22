@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #efeded ;
+    font-family: "Poppins", sans-serif;
+}
+
+/*NAVBAR*/
+
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: #e2e0e0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10 20px;
+}
+
+.logo img{
+   height: 110px;
+   width: auto;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #525252;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: #fefefe;
+}
+
+
+
+/*SECTION GENERAL*/
+section{
+    padding: 50px;
+    margin: 20px 0;
+}
+
+/*PROFILE SECTION*/
+.pic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.profile-pic{
+    width: 300px;
+    height: auto;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.content-text p{
+    font-size: 2rem;
+    color: rgb(139, 144, 149);
+}
+
+.content-text h1{
+    font-size: 3rem;
+}
+
+/*PROFILE BUTTON*/
+
+.profile-btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cv-btn, .contact-btn {
+    font-weight: 600;
+    font-size: 10px;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none; /* Ensure links have no underline */
+}
+.cv-btn {
+    background:#efeded;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+}
+
+.contact-btn {
+    background: rgb(53, 53, 53);
+    color: white;
+    border: none;
+}
+
+.cv-btn:hover{
+    background: rgb(53, 53, 53);
+    color: #fefefe;
+}
+
+.contact-btn:hover{
+    background-color: rgb(31, 30, 30);
+    color: #fefefe;
+}
+
+
+/*ABOUT SECTION*/
+#about{
+    max-width: 100%;
+    padding: 20px;
+}
+
+.about-header{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-header p{
+    font-size: 1rem;
+    color: rgb(139, 144, 149);
+}
+
+.about-header h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.about-container {
+    display: flex; /* Flexbox för horisontell layout */
+    align-items: flex-start; /* Toppen av innehållet justeras */
+    justify-content: center; /* Centrera innehållet horisontellt */
+    gap: 30px; /* Avstånd mellan bild och text */
+    padding: 20px;
+    flex-wrap: wrap; /* Gör layout responsiv vid små skärmar */
+    box-sizing: border-box;
+}
+
+.about-pic {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.education-icon{
+    font-size: 2rem;
+    color: #333;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+
+/* Behållare för Education och Experience */
+.details-container {
+    display: flex; /* Flexbox för två kolumner */
+    flex-direction: row; /* Horisontell layout */
+    gap: 20px; /* Mellanrum mellan kolumner */
+    
+}
+
+.education-column, .experience-column {
+    display: flex;
+    flex-direction: column; /* Vertikal layout i varje kolumn */
+    flex: 1;
+    max-width: 350px; /* Begränsa bredden */
+    text-align: center;
+    background: #efeded;   
+    padding: 70px;
+    border-radius: 1rem;
+    border: 1px solid;
+}
+
+/* Rubriker */
+.education-column h3, .experience-column h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.education-column ul li , .experience-column ul li {
+    margin-bottom: 10px;
+    
+}
+
+.experience-icon{
+    font-size: 2rem;
+    color: #333;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.about-text{
+    text-align: justify; /* Gör texten rak på båda sidor */
+    margin: 0 auto; /* Centrera sektionen om det behövs */
+    padding: 20px;
+    max-width: 1000px; /* Sätt en breddbegränsning */
+    font-size: 1.2rem;
+    color: rgb(70, 70, 70);
+    line-height: 1.8; /* Gör raderna lättare att läsa */
+}
+
+/*SECTION EXPERIENCE*/
+
+#experience{
+    max-width: 100%;
+    padding: 20px;
+}
+
+.experience-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experience-header p{
+    font-size: 1rem;
+    margin: 0;
+    color: rgb(139, 144, 149);
+}
+.experience-header h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.experience-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+.experience-category{
+    background: #fff;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+   
+}
+
+.custom-icon{
+   font-size: 2rem;
+   color: #333;
+   margin-bottom: 1rem;
+   
+}
+
+.experience-category h3{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+   
+}
+
+.experience-category ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.experience-category ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+  
+}
+
+.experience-category li i{
+    margin-right: 10px;
+    color: #045cba;
+}
+
+/*SECTION PROJECTS*/
+
+#projects{
+    max-width: 100%;
+    padding: 20px;
+    align-items: left;
+    
+}
+
+.project-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-header p{
+    font-size: 1rem;
+    margin: 0;
+    color: rgb(139, 144, 149);    
+}
+
+.project-header h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-card{
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-pic{
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-card h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.project-card p{
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 18px; /* Push the button to the bottom */
+}
+
+.github-btn i {
+    margin-right: 8px;
+}
+
+.github-btn:hover {
+    background-color: #c40404;
+    transform: translateY(-2px);
+}
+
+/*SECTION CONTACT*/
+
+#contact{
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-header p{
+    font-size: 1rem;
+    margin: 0;
+    color: rgb(139, 144, 149);    
+}
+
+.contact-header h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.contact-box{
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.contact-item i{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: #c40404;
+}
+
+.contact-item p{
+    margin: 0;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-item a {
+    color: #0077b5; /* LinkedIn blå */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #005582;
+}
+
+.contact-item span {
+    color: #555;
+}
+
+footer{
+    background-color: #e2e0e0;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1rem;
+    color: #333;
+    
+}
